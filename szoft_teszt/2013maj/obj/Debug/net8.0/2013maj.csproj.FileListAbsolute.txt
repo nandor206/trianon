@@ -1,0 +1,15 @@
+D:\Kollr\trianon\2013maj\bin\Debug\net8.0\2013maj.exe
+D:\Kollr\trianon\2013maj\bin\Debug\net8.0\2013maj.deps.json
+D:\Kollr\trianon\2013maj\bin\Debug\net8.0\2013maj.runtimeconfig.json
+D:\Kollr\trianon\2013maj\bin\Debug\net8.0\2013maj.dll
+D:\Kollr\trianon\2013maj\bin\Debug\net8.0\2013maj.pdb
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.AssemblyInfoInputs.cache
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.AssemblyInfo.cs
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.csproj.CoreCompileInputs.cache
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.sourcelink.json
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.dll
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\refint\2013maj.dll
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.pdb
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\2013maj.genruntimeconfig.cache
+D:\Kollr\trianon\2013maj\obj\Debug\net8.0\ref\2013maj.dll
