@@ -1,2 +1,2 @@
 # trianon
-Fáj a Trianon, aka Sztolár webprog
+Fáj a Trianon, aka Sztolár web és szoftverteszt
