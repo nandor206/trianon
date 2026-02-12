@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Kollr\\trianon\\2013maj\\",
+  "WorkspaceRootPath": "D:\\Kollr\\trianon\\szoft_teszt\\2013maj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB84F3CC-19FB-46D6-8B3F-B897A6FE8201}|2013maj.csproj|d:\\kollr\\trianon\\2013maj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB84F3CC-19FB-46D6-8B3F-B897A6FE8201}|2013maj.csproj|d:\\kollr\\trianon\\szoft_teszt\\2013maj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB84F3CC-19FB-46D6-8B3F-B897A6FE8201}|2013maj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Kollr\\trianon\\2013maj\\Program.cs",
+              "DocumentMoniker": "D:\\Kollr\\trianon\\szoft_teszt\\2013maj\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Kollr\\trianon\\2013maj\\Program.cs",
+              "ToolTip": "D:\\Kollr\\trianon\\szoft_teszt\\2013maj\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAiwKgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T12:56:35.068Z",
               "EditorCaption": ""

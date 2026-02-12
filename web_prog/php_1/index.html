@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaj de fáj a trianon</title>
+  </head>
+  <body>
+    <form
+      name="NewUser"
+      action="./register.php"
+      method="post"
+      onsubmit="return (validateUserName() && validatePassword() && validateEmail())"
+    >
+      <label for="username">Username:</label>
+      <input type="text" name="user" id="user" required />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+      <label for="password">Password:</label>
+      <input type="password" name="pwd" id="pwd" required />
+      <label for="password">Password again:</label>
+      <input type="password" name="cP" id="cP" required />
+      <input type="submit" name="submit" value="Register" />
+    </form>
+
+    <script>
+      function validateUserName() {
+        var u = document.forms["NewUser"]["user"].value;
+        var uLength = u.length;
+        var illegalChars = /\W/; // allow letters, numbers, and underscores
+        if (u == null || u == "") {
+          alert("You left Username field empty");
+          return false;
+        } else if (uLength < 4 || uLength > 11) {
+          alert("The Username must be between 4 and 11 characters");
+          return false;
+        } else if (illegalChars.test(u)) {
+          alert("The username contains illegal characters");
+          return false;
+        }
+        return true;
+      }
+      function validatePassword() {
+        var p = document.forms["NewUser"]["pwd"].value;
+        var cP = document.forms["NewUser"]["cP"].value;
+        var pLength = p.length;
+        if (p == null || p == "") {
+          alert("You left the password field empty");
+          return false;
+        } else if (pLength < 6 || pLength > 20) {
+          alert("Your password must be between 6 and 20 characters in length");
+          return false;
+        } else if (p != cP) {
+          alert("The passwords do not match!");
+          return false;
+        }
+        return true;
+      }
+      function validateEmail() {
+        var email = document.forms["NewUser"]["email"].value;
+        var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!pattern.test(email)) {
+          alert("The email is not valid.");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
