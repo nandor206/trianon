@@ -1,15 +1,9 @@
 <?php
-$name = $_POST["name"];
-$title = $_POST["title"];
+$country = $_POST["country"];
+$place = $_POST["place"];
 
-//$db_id = mysqli_connect("localhost", "root", "");
+$db_id = mysqli_connect("localhost", "root", "helyek");
 
+$sql_query = "Select orszag, fovaros where country like '' ";
 
-$info = (object) [
-    'success' => true,
-    'name' => $name,
-    'title' => $title
-  ];
-
-header('Content-type: application/json');
-echo json_encode($info);
+?>
