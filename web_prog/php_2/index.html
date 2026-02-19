@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>325 411 km2</title>
+  </head>
+  <body>
+    <form
+      name="data"
+      action="./write_data.php"
+      method="post"
+      onsubmit="return (ValidateCountry() && ValidatePlace())"
+    >
+      <label for="place">Helység:</label>
+      <input type="text" name="place" id="place" required />
+      <label for="country">Ország:</label>
+      <input type="text" name="country" id="country" required />
+      <input type="submit" name="submit" value="Search"/>
+    </form>
+    <script>
+      function ValidateCountry() {
+        var country = document.forms["data"]["country"].value;
+        var countryLength = country.length;
+        var illegalChars = /\p{L}/; // allow letters only
+        if (country == null || country == "") {
+          alert("You left the country field empty");
+          return false;
+        } else if (countryLength < 4 ) {
+          alert("Country input must be atleast 4 characters");
+          return false;
+        } else if (illegalChars.test(country)) {
+          alert("The country field contains illegal characters");
+          return false;
+        }
+        return true;
+      }
+      function ValidatePlace() {
+        var place = document.forms["data"]["place"].value;
+        var placeLength = place.length;
+        var illegalChars = /\p{L}/; // allow letters only
+        if (place == null || place == "") {
+          alert("You left the place field empty");
+          return false;
+        } else if (placeLength < 4 ) {
+          alert("Place input must be atleast 4 characters");
+          return false;
+        } else if (illegalChars.test(place)) {
+          alert("The place field contains illegal characters");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
