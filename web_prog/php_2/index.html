@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>325 411 km2</title>
+  </head>
+  <body>
+    <form
+      name="data"
+      action=""
+      method="post"
+      onclick="write_data()"
+    >
+      <label for="name">Name:</label>
+      <input type="text" name="user" id="name" required />
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title" required />
+      <input type="submit" name="submit" value="Save" onclick="write_data()" />
+    </form>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+      function validateName() {
+        var name = document.forms["data"]["name"].value;
+        var nameLength = name.length;
+        var illegalChars = /\W^\D*$/; // allow letters only
+        if (name == null || name == "") {
+          alert("You left the text field empty");
+          return false;
+        } else if (illegalChars.test(name)) {
+          alert("The text contains illegal characters like numbers");
+          return false;
+        }
+        return true;
+      }
+      function validateTitle() {
+        var title = document.forms["data"]["title"].value;
+        var titleLength = title.length;
+        var illegalChars = /\W/; // allow letters, numbers, and underscores
+        if (title == null || title == "") {
+          alert("You left Username field empty");
+          return false;
+        } else if (illegalChars.test(title)) {
+          alert("The username contains illegal characters");
+          return false;
+        }
+        return true;
+      }
+
+      function write_data() {
+        var request = new XMLHttpRequest();
+        let url = "./write_data.php?name=" + document.forms["data"]["name"].value + "?title=" + document.forms["data"]["title"].value
+        request.open("POST", url, true);
+
+        request.onload = function () {
+          if (request.status >= 200 && request.status < 400) {
+            var resp = request.responseText;
+            alert(resp);
+          } else {
+            alert("server error");
+          }
+        };
+
+        request.onerror = function () {
+          alert("connection error");
+        };
+
+        request.send();
+      }
+    </script>
+  </body>
+</html>
